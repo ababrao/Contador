@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Contador de simulado</h1>
+    <div>
+        <button class = "btn_questoes_A", onclick = btn_questoes()>A</button>
+        <button class = "btn_questoes", onclick = btn_questoes()>B</button>
+        <button class = "btn_questoes", onclick = btn_questoes()>C</button>
+        <button class = "btn_questoes", onclick = btn_questoes()>D</button>
+        <button class = "btn_questoes", onclick = btn_questoes()>E</button>
+    </div>
+
+    <div>
+        Questões respondidas:
+        <div id = "quest_resp">
+            0
+        </div>
+        Respostas gabarito:
+        <div id = "resp_gab">
+            0
+        </div>
+    </div>
+
+    <div>
+        <button class = "btn_gabarito", onclick = btn_gabarito_A()>A</button>
+        <button class = "btn_gabarito", onclick = btn_gabarito_B()>B</button>
+        <button class = "btn_gabarito", onclick = btn_gabarito_C()>C</button>
+        <button class = "btn_gabarito", onclick = btn_gabarito_D()>D</button>
+        <button class = "btn_gabarito", onclick = btn_gabarito_E()>E</button>
+    </div>
+
+    <div>
+        <button class = "Verificar respostas", onclick = verificar_respostas()>Verificar<br>respostas</button>
+        <p>
+            Acertos:
+            <div id = "acertos"></div>
+            Questoes:
+            <div id = "questoes"></div>
+        </p>
+    </div>
+
+    <script language = "javascript", src = "javascript.js"></script>
+</body>
+</html>
