@@ -10,48 +10,34 @@ var quantidade_gabarito_2 = 0;
 function questoes_resp() {
     var qtde_questoes = document.getElementById("quest_resp")
     quantidade_questoes_2++
-    qtde_questoes.innerHTML = quantidade_questoes++ 
+    qtde_questoes.textContent = quantidade_questoes++ 
 }
 function questoes_gab() {
     var qtde_gab = document.getElementById("resp_gab")
     quantidade_gabarito_2++
-    qtde_gab.innerHTML = quantidade_gabarito++
+    qtde_gab.textContent = quantidade_gabarito++
 }
 
+const a = "a";
+const b = "b";
+const c = "c";
+const d = "d";
+const e = "e";
 
 //Questoes
 function btn_questoes(alternativa) {
-    lista_questoes.push("A")
+    lista_questoes.push(alternativa)
     questoes_resp()
-    console.log(lista_questoes, lista_gabarito)
+    //console.log(lista_questoes, lista_gabarito)
 }
 
 //Gabarito
- function btn_gabarito_A() {
-    lista_gabarito.push("A")
+function btn_gabarito(alternativa) {
+    lista_gabarito.push(alternativa)
     questoes_gab()
-    console.log(lista_questoes, lista_gabarito)
+    //console.log(lista_questoes, lista_gabarito)
 }
-function btn_gabarito_B() {
-    lista_gabarito.push("B")
-    questoes_gab()
-    console.log(lista_questoes, lista_gabarito)
-}
-function btn_gabarito_C() {
-    lista_gabarito.push("C")
-    questoes_gab()
-    console.log(lista_questoes, lista_gabarito)
-}
-function btn_gabarito_D() {
-    lista_gabarito.push("D")
-    questoes_gab()
-    console.log(lista_questoes, lista_gabarito)
-}
-function btn_gabarito_E() {
-    lista_gabarito.push("E")
-    questoes_gab()
-    console.log(lista_questoes, lista_gabarito)
-}
+
 
 
 function verificar_respostas() {
@@ -66,13 +52,13 @@ function verificar_respostas() {
         var quantidade_acertos_2 = quantidade_acertos - 1
         a++
         b++
-        console.log(a, b , cond_for)
-        console.log(quantidade_questoes, quantidade_acertos)
+        //console.log(a, b , cond_for)
+        //console.log(quantidade_questoes, quantidade_acertos)
 
-        var acertos = document.getElementById("acertos")
-        var questoes = document.getElementById("questoes")
+        var acertos = document.getElementById("acertos_num")
+        var questoes = document.getElementById("questoes_num")
 
-        acertos.innerHTML = quantidade_acertos_2
-        questoes.innerHTML = quantidade_questoes_2
+        acertos.textContent = quantidade_acertos_2
+        questoes.textContent = quantidade_questoes_2
     }
 }
