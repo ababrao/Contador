@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    padding: 20px;
+    font: arial;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.btn_questoes, .btn_gabarito {
+    margin: 10px 3px 3px 0;
+    font-size: 15px;
+    font: arial;
+}
+
+.questoes_respondidas, .respostas_gabarito {
+    font: arial;
+    font-size: 18px;
+    padding: 5px;
+}
+#quest_resp, #resp_gab {
+    font-size: 17px;
+}
+.verificar_respostas {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.acertos {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+}
+
+.questoes {
+    font-size: 18px;
+    padding: 10px 0 0 0;
+}
